@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="col-1 mb-5">
-                                    <div class="h-25">
+                                    <div class="">
                                         <i class="fa-solid fa-gear"></i>
                                         <span class="d-none d-md-inline">Admin</span>
                                     </div>
@@ -151,12 +151,12 @@
                     <div class="col-10 px-0">
                         <div class="container">
                             <!-- top main blu background  -->
-                            <div class="row bg-primary ">
+                            <div class="row bg-primary pt-2">
                                 <!-- Nav breadcrumb -->
                                 <div class="col-6">
                                     <h1 class="d-inline text-light">Boolean</h1>
                                     <span class="text-light rounded-pill bg-black bg-opacity-25 px-1">Piano Blaze</span>
-                                    <nav style="--bs-breadcrumb-divider: '>>'" aria-label="breadcrumb">
+                                    <nav style="--bs-breadcrumb-divider:'>>'" aria-label="breadcrumb">
                                         <ol class="breadcrumb">
                                             <li class="breadcrumb-item"><a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1"  >3 app</a></li>
                                             </li>
@@ -168,6 +168,14 @@
                                         </ol>
                                         </nav>
                                      </div>
+                                     <!-- studenti online -->
+                                <div class="col-3 text-light ">
+                                    <p>Studenti online negli ultimi 30 giorni</p>
+                                    <h2>125</h2>
+                                </div>
+                                <!-- nuovo studente -->
+                                <div class="col-3 text-light text-end ">
+                                    Nuovo studente
 
 
 
@@ -177,9 +185,75 @@
 
 
 
+                                    <!-- offcanvas -->
+                            
+                                    <button class="btn btn-primary btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd" aria-controls="offcanvasEnd"><i class="fa-solid fa-plus"></i></button>
 
-                                <div class="col-3"></div>
-                                <div class="col-3"></div>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
+                                    <div class="offcanvas-header">
+                                        <h5 id="offcanvasEndLabel">Inserisci un nuovo studente</h5>
+                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body text-start">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-6 mb-3 text-start">
+                                                    <label for="exampleInputtext1" class="form-label">Name</label>
+                                                    <input type="text" class="form-control" id="exampleInputtext1" >
+                                                </div>
+                                                <div class="col-6 mb-3 text-start">
+                                                    <label for="exampleInputsurname1" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" id="exampleInputsurname1">
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 mb-3 text-start">
+                                                       <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                        <input type="email" class="form-control" id="exampleInputEmail1">
+                                                </div>
+                                                <div class="col-6 mb-3 text-start">
+                                                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="exampleInputPassword1">
+                                                </div>
+                                            </div>
+                                            <div class="text-start">
+                                                <label for="adress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" id="exampleInputAdress1">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <label for="exampleInputcity1" class="form-label text-start">Città</label>
+                                                    <input type="text" class="form-control" id="exampleInputcity1">
+                                                </div>
+                                                <div class="col-4">
+                                                    <label for="state" class="form-label text-start">Stato</label>
+                                                    <select class="form-control" id="state">
+                                                        <option value="Scegli..">Scegli...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-2">
+                                                    <label for="cap" class="form-label text-start">CAP</label>
+                                                    <input type="text" class="form-control" id="cap">
+                                                </div>
+                                                <div class="input-group mb-3">
+                                                    <label for="picture" class="form-label text-start" > Foto</label>
+                                                    <div class="input-group flex-nowrap">
+                                                        <span class="input-group-text" id="inputGroup-sizing">Scegli file</span>
+                                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing" placeholder="Nessun file selezionato" id="picture">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input me-0" id="exampleCheck1">
+                                                    <label class="form-check-label text-start" for="exampleCheck1">Seleziona per proseguire</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Salva</button>
+                                                <button type="reset" class="btn btn-warning">Svuota</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- body page card -->
                             <div class="row">
@@ -202,7 +276,7 @@
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr class="align-middle">
+                                                        <tr class="align-middle h-25">
                                                             <td class="text-start" scope="col"><img src="img/class-avatar.jpg" class="w-25 img-fluid" alt="avatar">Classe 75</td>
                                                             <td class="text-nowrap" >15 Feb 2021</td>
                                                             <td>20%</td>
