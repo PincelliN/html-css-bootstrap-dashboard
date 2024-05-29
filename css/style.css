@@ -15,5 +15,39 @@ aside{
 table img{
     width: 50px;
 }
-
-                                           
+nav img:first-child{
+    width: 60px;
+}
+nav{
+    height: 10vh;
+}
+aside{
+    max-height:90vh;
+}
+aside+div{
+    max-height: 90vh;
+}
+.fa-bell{
+    color: rgb(250, 213, 5)!important;
+}
+aside .col-9>div:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}  
+nav .col-8 button{
+    background-color:rgb(228, 226, 226)!important; 
+}                                  
+nav input{
+    background-color:rgb(228, 226, 226)!important;
+    color: black;
+}
+nav .navbar-collapse li:hover{
+    background-color: rgb(197, 196, 196);
+}
+nav .navbar-collapse li:hover>a{
+    color: white;
+}
+tr:hover td{
+    background-color: rgb(194, 192, 192);
+}

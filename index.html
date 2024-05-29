@@ -27,30 +27,30 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <div class="row">
                 <!-- navbar -->
-                <div class="col-12">
+                <div class="col-12 w-100 ">
                     <!-- LOGO  -->
-                    <nav class="navbar navbar-expand-lg bg-body-white">
-                        <div class=" row row-col-3 container-fluid align-center">
-                            <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-body-white vw-100">
+                        <div class=" row container justify-content-between align-center  pe-0">
+                            <div class="col-2 ">
                                 <a class="navbar-brand" href="#">
-                                    <img src="img/mobile-logo.png" class="img-fluid w-100 d-md-none" alt="logo">
+                                    <img src="img/mobile-logo.png" class=" px-1 mx-0 d-md-none" alt="logo">
                                     <img src="img/logo.svg" class="img-fluid d-none d-md-inline " alt="logo">
                                 </a>
                             </div>
                             <!--SERACH  -->
-                            <div class="col col-md-8">
-                                <div class="input-group  rounded bg-secondary opacity-25 dark-text-emphasis ">
-                                    <div class="input-group-prepend">
-                                        <button class="btn " type="submit">
+                            <div class="col-8">
+                                <div class="input-group  rounded ">
+                                    <div class="input-group-prepend ">
+                                        <button class="btn rounded-end-0" type="submit">
                                             <i class="fa-solid fa-magnifying-glass "></i>
                                         </button>
                                     </div>
                                     <input
                                         type="text"
-                                        class="form-control border-0 bg-secondary"
+                                        class="form-control border-0 "
                                         placeholder="Prova a cercare:Lezioni di aravel"
                                         aria-label
                                         aria-describedby="basic-addon1"
@@ -58,9 +58,9 @@
                                 </div>
                             </div>
                             <!-- MENù -->
-                            <div class="col d-flex justify-content-end">
+                            <div class="col-2 d-flex justify-content-end">
                                 <button
-                                    class="navbar-toggler  border-0"
+                                    class="navbar-toggler  border-0 "
                                     type="button"
                                     data-bs-toggle="collapse"
                                     data-bs-target="#navbarSupportedContent"
@@ -73,7 +73,7 @@
                                 <div class="collapse navbar-collapse " id="navbarSupportedContent">
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                                         <li class="nav-item">
-                                            <a class="nav-link active" aria-current="page" href="#">
+                                            <a class="nav-link" aria-current="page" href="#">
                                                 <i class="fa-solid fa-list-ul"></i>
                                             </a>
                                         </li>
@@ -119,19 +119,19 @@
                         <div class="container h-100 pt-0 ">
                             <div class="row row-col-1 flex-column justify-content-between mt-3 h-100">
                                 <div class="col-9">
-                                    <div>
+                                    <div class="text-nowrap bg-hover-light">
                                         <i class="fa-solid fa-house"></i>
-                                        <span class="d-none d-md-inline">
+                                        <span class="d-none d-md-inline ">
                                             Home
                                         </span>
                                     </div>
-                                    <div>
+                                    <div class="text-nowrap">
                                         <i class="fa-solid fa-chart-simple"></i>
                                         <span class="d-none d-md-inline">
                                             Stats
                                         </span>
                                     </div>
-                                    <div>
+                                    <div class="text-nowrap">
                                         <i class="fa-solid fa-signal"></i>
                                         <span class="d-none d-md-inline">
                                             Signals
@@ -139,7 +139,7 @@
                                     </div>
                                 </div>
                                 <div class="col-1 mb-5">
-                                    <div class="">
+                                    <div class="text-nowrap">
                                         <i class="fa-solid fa-gear"></i>
                                         <span class="d-none d-md-inline">Admin</span>
                                     </div>
@@ -148,99 +148,99 @@
                         </div>
                     </aside>
                     <!-- main col -->
-                    <div class="col-10 px-0">
-                        <div class="container">
+                    <div class="col-10  overflow-y-scroll">
+                        <div class="container px-0 ">
                             <!-- top main blu background  -->
-                            <div class="row bg-primary pt-2">
+                            <div class="row row-cols-1 row-cols-md-3  bg-primary pt-2 px-0">
                                 <!-- Nav breadcrumb -->
-                                <div class="col-6">
-                                    <h1 class="d-inline text-light">Boolean</h1>
-                                    <span class="text-light rounded-pill bg-black bg-opacity-25 px-1">Piano Blaze</span>
-                                    <nav style="--bs-breadcrumb-divider:'>>'" aria-label="breadcrumb">
-                                        <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1"  >3 app</a></li>
-                                            </li>
-                                            <li class="breadcrumb-item active" aria-current="page">
-                                                <a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1">Boolean mobile app</a>
-                                                <a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1 ">Boolean web app</a> 
-                                                <a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1">Boolean blog app</a>
-                                            </li>
-                                        </ol>
-                                        </nav>
-                                     </div>
-                                     <!-- studenti online -->
-                                <div class="col-3 text-light ">
-                                    <p>Studenti online negli ultimi 30 giorni</p>
-                                    <h2>125</h2>
-                                </div>
-                                <!-- nuovo studente -->
-                                <div class="col-3 text-light text-end ">
-                                    Nuovo studente
-                                    <!-- offcanvas -->
-                                    <button class="btn btn-primary btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd" aria-controls="offcanvasEnd"><i class="fa-solid fa-plus"></i></button>
-                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
-                                    <div class="offcanvas-header">
-                                        <h5 id="offcanvasEndLabel">Inserisci un nuovo studente</h5>
-                                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    <div class="col col-md-6 mx-0">
+                                        <h1 class="d-inline text-light">Boolean</h1>
+                                        <span class="text-light rounded-pill bg-black bg-opacity-25 px-1">Piano Blaze</span>
+                                        <nav style="--bs-breadcrumb-divider:'>>'" aria-label="breadcrumb">
+                                            <ol class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1"  >3 app</a></li>
+                                                </li>
+                                                <li class="breadcrumb-item active" aria-current="page">
+                                                    <a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1">Boolean mobile app</a>
+                                                    <a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1 ">Boolean web app</a> 
+                                                    <a href="#" class="text-white  link-underline link-underline-opacity-0 rounded-pill bg-black bg-opacity-25 px-1">Boolean blog app</a>
+                                                </li>
+                                            </ol>
+                                            </nav>
                                     </div>
-                                    <div class="offcanvas-body text-start">
-                                        <form>
-                                            <div class="row">
-                                                <div class="col-6 mb-3 text-start">
-                                                    <label for="exampleInputtext1" class="form-label">Name</label>
-                                                    <input type="text" class="form-control" id="exampleInputtext1" >
-                                                </div>
-                                                <div class="col-6 mb-3 text-start">
-                                                    <label for="exampleInputsurname1" class="form-label">Cognome</label>
-                                                    <input type="text" class="form-control" id="exampleInputsurname1">
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6 mb-3 text-start">
-                                                       <label for="exampleInputEmail1" class="form-label">Email address</label>
-                                                        <input type="email" class="form-control" id="exampleInputEmail1">
-                                                </div>
-                                                <div class="col-6 mb-3 text-start">
-                                                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="exampleInputPassword1">
-                                                </div>
-                                            </div>
-                                            <div class="text-start">
-                                                <label for="adress" class="form-label">Indirizzo</label>
-                                                <input type="text" class="form-control" id="exampleInputAdress1">
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-6">
-                                                    <label for="exampleInputcity1" class="form-label text-start">Città</label>
-                                                    <input type="text" class="form-control" id="exampleInputcity1">
-                                                </div>
-                                                <div class="col-4">
-                                                    <label for="state" class="form-label text-start">Stato</label>
-                                                    <select class="form-control" id="state">
-                                                        <option value="Scegli..">Scegli...</option>
-                                                    </select>
-                                                </div>
-                                                <div class="col-2">
-                                                    <label for="cap" class="form-label text-start">CAP</label>
-                                                    <input type="text" class="form-control" id="cap">
-                                                </div>
-                                                <div class="input-group mb-3">
-                                                    <label for="picture" class="form-label text-start" > Foto</label>
-                                                    <div class="input-group flex-nowrap">
-                                                        <span class="input-group-text" id="inputGroup-sizing">Scegli file</span>
-                                                        <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing" placeholder="Nessun file selezionato" id="picture">
+                                     <!-- studenti online -->
+                                    <div class="col col-md-3 text-light ">
+                                        <p>Studenti online negli ultimi 30 giorni</p>
+                                        <h2>125</h2>
+                                    </div>
+                                <!-- nuovo studente -->
+                                    <div class="col col-md-3 text-light text-md-end ">
+                                        Nuovo studente
+                                        <!-- offcanvas -->
+                                        <button class="btn btn-primary btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEnd" aria-controls="offcanvasEnd"><i class="fa-solid fa-plus"></i></button>
+                                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasEnd" aria-labelledby="offcanvasEndLabel">
+                                        <div class="offcanvas-header">
+                                            <h5 id="offcanvasEndLabel">Inserisci un nuovo studente</h5>
+                                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                        </div>
+                                        <div class="offcanvas-body text-start">
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-6 mb-3 text-start">
+                                                        <label for="exampleInputtext1" class="form-label">Name</label>
+                                                        <input type="text" class="form-control" id="exampleInputtext1" >
+                                                    </div>
+                                                    <div class="col-6 mb-3 text-start">
+                                                        <label for="exampleInputsurname1" class="form-label">Cognome</label>
+                                                        <input type="text" class="form-control" id="exampleInputsurname1">
                                                     </div>
                                                 </div>
-                                            </div>
-                                                <div class="mb-3 form-check">
-                                                    <input type="checkbox" class="form-check-input me-0" id="exampleCheck1">
-                                                    <label class="form-check-label text-start" for="exampleCheck1">Seleziona per proseguire</label>
+                                                <div class="row">
+                                                    <div class="col-6 mb-3 text-start">
+                                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                                            <input type="email" class="form-control" id="exampleInputEmail1">
+                                                    </div>
+                                                    <div class="col-6 mb-3 text-start">
+                                                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="exampleInputPassword1">
+                                                    </div>
                                                 </div>
-                                                <button type="submit" class="btn btn-primary">Salva</button>
-                                                <button type="reset" class="btn btn-warning">Svuota</button>
-                                            </div>
-                                        </form>
-                                    </div>
+                                                <div class="text-start">
+                                                    <label for="adress" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="exampleInputAdress1">
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <label for="exampleInputcity1" class="form-label text-start">Città</label>
+                                                        <input type="text" class="form-control" id="exampleInputcity1">
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <label for="state" class="form-label text-start">Stato</label>
+                                                        <select class="form-control" id="state">
+                                                            <option value="Scegli..">Scegli...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <label for="cap" class="form-label text-start">CAP</label>
+                                                        <input type="text" class="form-control" id="cap">
+                                                    </div>
+                                                    <div class="input-group mb-3">
+                                                        <label for="picture" class="form-label text-start" > Foto</label>
+                                                        <div class="input-group flex-nowrap">
+                                                            <span class="input-group-text" id="inputGroup-sizing">Scegli file</span>
+                                                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing" placeholder="Nessun file selezionato" id="picture">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                    <div class="mb-3 form-check">
+                                                        <input type="checkbox" class="form-check-input me-0" id="exampleCheck1" required>
+                                                        <label class="form-check-label text-start" for="exampleCheck1" >Seleziona per proseguire</label>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">Salva</button>
+                                                    <button type="reset" class="btn btn-warning">Svuota</button>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@
                             <div class="row p-2">
                                 <div class="col-12 col-lg-8 mt-4">
                                     <div>
-                                        <div class="card">
+                                        <div class="card overflow-x-hidden">
                                             <div class="card-header h3 ">
                                                 Prossime classi
                                             </div>
@@ -444,16 +444,16 @@
                                               ToDo
                                             </div>
                                             <div class="card-body ">
-                                                <div class="input-group-text rounded-top rounded-bottom-0 w-100">
-                                                    <input class="form-check-input mt-0 me-2 fs-4" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                                <div class="input-group-text rounded-top rounded-bottom-0 w-100overflow-x-hidden">
+                                                    <input class="form-check-input mt-0 me-2 fs-4 " type="checkbox" value="" aria-label="Checkbox for following text input">
                                                     Kickoff Nuove classi
                                                 </div>
-                                                <div class="input-group-text w-100 rounded-0">
-                                                    <input class="form-check-input mt-0 me-2 fs-4" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                                <div class="input-group-text w-100 rounded-0 overflow-x-hidden">
+                                                    <input class="form-check-input mt-0 me-2 fs-4 " type="checkbox" value="" aria-label="Checkbox for following text input">
                                                     Lezioni su Boostrap 5 in classe #75
                                                 </div>
-                                                <div class="input-group-text rounded-bottom rounded-top-0 w-100">
-                                                    <input class="form-check-input mt-0 me-2 fs-4" type="checkbox" value="" aria-label="Checkbox for following text input">
+                                                <div class="input-group-text rounded-bottom rounded-top-0 w-100 overflow-x-hidden">
+                                                    <input class="form-check-input mt-0 me-2 fs-4 " type="checkbox" value="" aria-label="Checkbox for following text input">
                                                     Controllare Username github studenti
                                                 </div>
                                             </div>
